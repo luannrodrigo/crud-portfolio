@@ -4,7 +4,8 @@ const cors = require('cors');
 // Obj de inicialição do express
 const app = express();
 // Porta de escuta do servidor
-const port = 3000;
+
+const port = process.env.PORT || 8080;
 // rotas
 const router = express.Router();
 portfolioRouter = require('./router/portfolioRouter');
